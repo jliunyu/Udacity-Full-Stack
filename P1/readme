@@ -1,0 +1,16 @@
+1. The project is "Movie Trailer Website" while include three files, they are entermedia_center.py, fresh_tomatoes.py and media.py. The main function of the project is to write the server-side code to store a list of your favorite movies, including the poster and a movie trailer URL. then serve this data as a web page allowing visitors to review their movies and watch the trailers.
+
+2. The file media.py import the webbrower API and include a class named Movie and its constructor includes three paremeters, they are movie_title, poster_image, trailer_youtube
+
+3. The file entermedia_center.py is used to create instances of Movie and store them into a list, then called the function of open_movies_page in fresh_tomatoes to render the page from the brower.
+
+4. The file fresh_tomatoes.py is an open source file, which is used to create the dynamic html file and render it through the server.
+
+5. The python version 2.7.6 should be installed before running the program.
+
+6. how to run the code: using "cd Project1" command in the terminal
+then using "python entermedia_center.py" command, a web page will be opend in your default brower
+you can click picture from the web page to see the movie
+
+7. List of Author: Jane
+
