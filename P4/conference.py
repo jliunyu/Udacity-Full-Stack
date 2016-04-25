@@ -629,7 +629,8 @@ class ConferenceApi(remote.Service):
         data['key'] = session_key
 
         # https://cloud.google.com/appengine/docs/python/ndb/modelclass
-        Session(**data).put()
+        session = Session(**data)
+        session.put()
 
         # update featured speakers (task-4)
         taskqueue.add(params={'speaker': session.speaker}, url='/tasks/set_featured_speaker')
@@ -777,7 +778,8 @@ class ConferenceApi(remote.Service):
     def getSessionsBeforeCurrentTime(self, request):
         """query for all the sessions that start before current time"""
 
-        sessions = ndb.gql("SELECT * FROM Session WHERE Session.startTime < datetime.datetime.now()").fetch()
+        currenttime = datetime.datetime.now()
+        sessions = ndb.gql("SELECT * FROM Session WHERE Session.startTime < currenttime").fetch()
         # return set of Sessions
         return SessionForms(items=[self._copySessionToForm(session) for session in sessions])
 
@@ -790,13 +792,10 @@ class ConferenceApi(remote.Service):
     def getSessionsWithSpecialDurationTime(self, request):
         """query for all the sessions that are between 20-30 mins long"""
 
-        sessions = Session.query()
-        sessions = sessions.filter(Session.duration >= 20)
-
-        results = [sess for sess in sessions if sess.duration <= 30]
+        sessions = Session.query(ndb.AND(Session.duration >= 20, Session.duration <= 30)).fetch()
 
         # return set of Sessions
-        return SessionForms(items=[self._copySessionToForm(session) for session in results])
+        return SessionForms(items=[self._copySessionToForm(session) for session in sessions])
 
 
 # - - - Task-4 - Add a Task - - - - - - - - - - - - - - - - - - - -
