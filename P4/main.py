@@ -41,8 +41,8 @@ class SendConfirmationEmailHandler(webapp2.RequestHandler):
 class SetFeaturedSpeakerHandler(webapp2.RequestHandler):
     def post(self):
         """Set speaker in Memcache."""
-        speaker = self.request.get('speaker')
-        ConferenceApi._cacheFeaturedSpeaker(speaker)
+        speakerOfConference = self.request.get('speaker')
+        ConferenceApi._cacheFeaturedSpeaker(speakerOfConference)
         self.response.set_status(204)
 
 app = webapp2.WSGIApplication([
