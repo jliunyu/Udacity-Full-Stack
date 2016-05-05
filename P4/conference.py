@@ -607,7 +607,7 @@ class ConferenceApi(remote.Service):
         conference_key = ndb.Key(urlsafe=request.websafeConferenceKey)
 
         if not conference_key:
-            raise endpoints.BadRequestException("Invalid 'websafeConferenceKey' field")z
+            raise endpoints.BadRequestException("Invalid 'websafeConferenceKey' field")
 
         # copy ConferenceForm/ProtoRPC Message into dict
         data = {field.name: getattr(request, field.name) for field in request.all_fields()}
@@ -713,7 +713,7 @@ class ConferenceApi(remote.Service):
 
             # add to wishlist
             prof.sessionKeysWishlisted.append(wssk)
-            retVal = True
+            retval = True
 
         # remove from wishlist
         else:
@@ -778,7 +778,7 @@ class ConferenceApi(remote.Service):
     def getSessionsBeforeCurrentTime(self, request):
         """query for all the sessions that start before current time"""
 
-        currenttime = datetime.datetime.now()
+        currenttime = datetime.now()
         sessions = ndb.gql("SELECT * FROM Session WHERE Session.startTime < currenttime").fetch()
         # return set of Sessions
         return SessionForms(items=[self._copySessionToForm(session) for session in sessions])
