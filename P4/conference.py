@@ -14,7 +14,7 @@ __author__ = 'wesc+api@google.com (Wesley Chun)'
 
 
 from datetime import datetime
-
+from datetime import time
 import endpoints
 from protorpc import messages
 from protorpc import message_types
@@ -776,10 +776,9 @@ class ConferenceApi(remote.Service):
                       http_method='GET',
                       name='getSessionsBeforeCurrentTime')
     def getSessionsBeforeCurrentTime(self, request):
-        """query for all the sessions that start before current time"""
+        """query for all the sessions that start before 20:00"""
 
-        currenttime = datetime.now()
-        sessions = ndb.gql("SELECT * FROM Session WHERE Session.startTime < currenttime").fetch()
+        sessions = Session.query(Session.startTime < time(20, 00)).fetch()
         # return set of Sessions
         return SessionForms(items=[self._copySessionToForm(session) for session in sessions])
 
