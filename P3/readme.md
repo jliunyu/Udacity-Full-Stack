@@ -12,6 +12,14 @@ Using command cd /vagrant/Web
 then run the command python database_setup.py to set up the database
 then run the command python lotsofmenus.py to add data to the database
 then run the command python project.py to start the server
-enter the url at the brower to send the request, the url is http://localhost:5000/restaurants/2/menu
+enter the url at the brower to send the request, the url is http://localhost:5000
 
-7. List of Author: Jane
+7. feature of the project:
+1) login using google account and login using facebook account
+2) logout
+3) show all restaurants using url http://localhost:5000/restaurant/
+4) create new restaurant
+5) view and edit the menu of the restaurant: if the restuarant is created by the current user, after the user click the url, the user can create edit or delete items in the menu, other users can only view the menu
+5) visit menu accordingt o their category
+
+8. List of Author: Jane
