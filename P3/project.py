@@ -38,12 +38,6 @@ def showLogout():
     result = disconnect();
     return render_template('logout.html', result=result)
 
-@app.route('/')
-@app.route('/restaurant/')
-def showRestaurants():
-    restaurants = session.query(Restaurant).order_by(asc(Restaurant.name))
-    return render_template('restaurants.html', restaurants = restaurants)
-
 @app.route('/restaurant/<int:restaurant_id>/')
 @app.route('/restaurant/<int:restaurant_id>/menu/')
 def showMenu(restaurant_id):
@@ -334,7 +328,6 @@ def menuItemJSON(restaurant_id, menu_id):
     menuItem = session.query(MenuItem).filter_by(id = menu_id).one()
     return jsonify(MenuItem = menuItem.serialize)
 	
-@app.route('/')
 @app.route('/restaurants/<int:restaurant_id>/menu')
 def restaurantMenu(restaurant_id):
     restaurant = session.query(Restaurant).filter_by(id=restaurant_id).one()
