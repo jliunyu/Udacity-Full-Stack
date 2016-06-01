@@ -10,3 +10,8 @@
 > The complete URL to your hosted web application. 
 
 * ec2-54-187-79-110.us-west-2.compute.amazonaws.com
+
+> A summary of software you installed and configuration changes made.
+
+
+> A list of any third-party resources you made use of to complete this project.
