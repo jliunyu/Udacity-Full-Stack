@@ -11,6 +11,7 @@
 
 * ec2-54-187-79-110.us-west-2.compute.amazonaws.com
 
+## Software and resources
 > A summary of software you installed and configuration changes made.
 
 
