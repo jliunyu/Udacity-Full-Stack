@@ -54,6 +54,13 @@
 * $ sudo apt-get install git  
   $ git clone https://github.com/jliunyu/Udacity-Full-Stack.git 
 
+* $ mkdir /var/www/catalog; mkdir /var/www/catalog;  
+  $ sudo cp -rp Udacity-Full-Stack/P3/* /var/www/catalog/
+  $ vim /var/www/catalog/catalog.wsgi - then add content to catalog.wsgi  
+  $ vim /etc/apache2/sites-available/catalog.conf - then add content  
+  $ vim /etc/apache2/sites-enabled/000-default.conf - and add WSGIScriptAlias / /var/www/catalog/catalog.wsgi  
+  Rerefence Link [Digital Ocean]{https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps}
+
 * $ sudo apt-get install postgresql postgresql-contrib
 
 * $ sudo -u postgres psql - in postgres terminal, create user and database
