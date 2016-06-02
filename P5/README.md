@@ -43,13 +43,13 @@
   $ sudo apt-get install python-dev python-pip;  
   $ sudo apt-get install libpq-dev; 
   $ sudo apt-get install libapache2-mod-wsgi;   
-  $ sudo pip install httplib2
-  $ sudo pip install requests
-  $ sudo pip install --upgrade oauth2client
-  $ sudo pip install sqlalchemy
-  $ sudo pip install python-psycopg2
-  $ sudo pip install Flask-SQLAlchemy
-  $ sudo pip install psycopg2
+  $ sudo pip install httplib2  
+  $ sudo pip install requests  
+  $ sudo pip install --upgrade oauth2client  
+  $ sudo pip install sqlalchemy  
+  $ sudo pip install python-psycopg2  
+  $ sudo pip install Flask-SQLAlchemy  
+  $ sudo pip install psycopg2  
    
 * $ sudo apt-get install git  
   $ git clone https://github.com/jliunyu/Udacity-Full-Stack.git 
@@ -61,7 +61,7 @@
   * ALTER USER catalog CREATEDB 
   * CREATE DATABASE catalog WITH OWNER catalog 
 
-* $ vim database_setup.py; - change engine to postgresql://catalog:catalog@localhost/catalog
+* $ vim database_setup.py; - change engine to postgresql://catalog:catalog@localhost/catalog  
   $ sudo python database_setup.py
 
 * $ vim project.py; - change engine to postgresql://catalog:catalog@localhost/catalog  
