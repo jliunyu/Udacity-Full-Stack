@@ -16,7 +16,7 @@
 
 * $ mv ~/Downloads/udacity_key.rsa ~/.ssh/;  
   $ chmod 600 ~/.ssh/udacity_key.rsa;  
-  $ ssh -i ~/.ssh/udacity_key.rsa root@52.40.85.24  
+  $ ssh -i ~/.ssh/udacity_key.rsa root@52.32.166.80  
   Reference Link: [Udacity](https://www.udacity.com/account#!/development_environment)
 * $ sudo apt-get update  
 
