@@ -19,20 +19,26 @@
   $ ssh -i ~/.ssh/udacity_key.rsa root@52.40.85.24  
   Reference Link: [Udacity](https://www.udacity.com/account#!/development_environment)
 * $ sudo apt-get update  
-* $ sudo adduser grader
+
+* $ sudo adduser grader  
+
 * $ sudo visudo - and then copy "grader  ALL=(ALL:ALL) ALL" under root entry  
-  Reference Link: [Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-add-delete-and-grant-sudo-privileges-to-users-on-a-debian-vps)
+  Reference Link: [Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-add-delete-and-grant-sudo-privileges-to-users-on-a-debian-vps)  
+
 * $ sudo vim /etc/ssh/sshd_config; - change port 22 to 2200 and 
-  $ sudo service ssh restart
+  $ sudo service ssh restart  
+
 * $ sudo ufw status;  
   $ sudo ufw default deny incoming;  
   $ sudo ufw default allow outgoing;  
   $ sudo ufw allow 2200/tcp;  
   $ sudo ufw allow 123/udp;  
   $ sudo ufw allow 80/tcp;    
-  $ sudo ufw enable
+  $ sudo ufw enable  
+
 * sudo dpkg-reconfigure tzdata  
   Reference Link: [ask ubuntu](http://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt)
+
 * $ sudo apt-get install apache2;  
   $ sudo apt-get install python-dev python-pip;  
   $ sudo apt-get install libpq-dev; 
@@ -46,8 +52,12 @@
   $ sudo pip install psycopg2
    
 * $ sudo apt-get install git  
-  $ git clone https://github.com/jliunyu/Udacity-Full-Stack.git  
+  $ git clone https://github.com/jliunyu/Udacity-Full-Stack.git 
+
 * $ sudo apt-get install postgresql postgresql-contrib
+
+* $ sudo adduser catalog
+  $ sudo su - postgres
 
 
 > A list of any third-party resources you made use of to complete this project.
