@@ -16,7 +16,10 @@
 
 * sudo apt-get update; sudo apt-get upgrade
 * sudo adduser grader
-* sudo visudo; and then copy "grader  ALL=(ALL:ALL) ALL" under root entry [Reference Link](https://www.digitalocean.com/community/tutorials/how-to-add-delete-and-grant-sudo-privileges-to-users-on-a-debian-vps)
+* sudo visudo - and then copy "grader  ALL=(ALL:ALL) ALL" under root entry  
+  Reference Link: [Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-add-delete-and-grant-sudo-privileges-to-users-on-a-debian-vps)
+* vim /etc/ssh/sshd_config; - change port 22 to 2200
+  sudo service ssh restart 
 * 
 
 
