@@ -55,7 +55,7 @@
   $ git clone https://github.com/jliunyu/Udacity-Full-Stack.git 
 
 * $ mkdir /var/www/catalog; mkdir /var/www/catalog;  
-  $ sudo cp -rp Udacity-Full-Stack/P3/* /var/www/catalog/
+  $ sudo cp -rp Udacity-Full-Stack/P3/* /var/www/catalog/  
   $ vim /var/www/catalog/catalog.wsgi - then add content to catalog.wsgi  
   $ vim /etc/apache2/sites-available/catalog.conf - then add content  
   $ vim /etc/apache2/sites-enabled/000-default.conf - and add WSGIScriptAlias / /var/www/catalog/catalog.wsgi  
