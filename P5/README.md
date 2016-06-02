@@ -9,7 +9,7 @@
 ## URL
 > The complete URL to your hosted web application. 
 
-* http://ec2-54-40-85-24.us-west-2.compute.amazonaws.com
+* http://ec2-52-32-166-80.us-west-2.compute.amazonaws.com
 
 ## Software and resources
 > A summary of software you installed and configuration changes made.
@@ -68,5 +68,7 @@
   $ mv project.py __init__.py
 
 * $ sudo service apache2 restart 
+
+* add ip or url to google/facebook developer console
 
 > A list of any third-party resources you made use of to complete this project.
