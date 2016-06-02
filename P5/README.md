@@ -69,6 +69,4 @@
 
 * $ sudo service apache2 restart 
 
-* add ip or url to google/facebook developer console
-
-> A list of any third-party resources you made use of to complete this project.
+* add ip or url to google/facebook developer console  
