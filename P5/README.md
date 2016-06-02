@@ -3,7 +3,7 @@
 ## IP and Port
 > The IP address and SSH port so your server can be accessed by the reviewer. 
 
-* IP:   52.40.85.24
+* IP:   52.32.166.80
 * Port: 2200
 
 ## URL
@@ -36,6 +36,8 @@
 * $ sudo apt-get install apache2;  
   $ sudo apt-get install python-dev;  
   $ sudo apt-get install libapache2-mod-wsgi  
+* $ sudo apt-get install git  
+  $ git clone https://github.com/jliunyu/Udacity-Full-Stack.git  
 * 
 
 
