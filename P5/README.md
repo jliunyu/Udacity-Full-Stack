@@ -57,9 +57,9 @@
 * $ sudo apt-get install postgresql postgresql-contrib
 
 * $ sudo -u postgres psql - in postgres terminal, create user and database
-** CREATE USER catalog WITH PASSWORD 'catalog'
-** ALTER USER catalog CREATEDB 
-** CREATE DATABASE catalog WITH OWNER catalog 
+  * CREATE USER catalog WITH PASSWORD 'catalog'
+  * ALTER USER catalog CREATEDB 
+  * CREATE DATABASE catalog WITH OWNER catalog 
 
 * $ vim database_setup.py; - change engine to postgresql://catalog:catalog@localhost/catalog
   $ sudo python database_setup.py
