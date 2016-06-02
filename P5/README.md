@@ -59,7 +59,7 @@
   $ vim /var/www/catalog/catalog.wsgi - then add content to catalog.wsgi  
   $ vim /etc/apache2/sites-available/catalog.conf - then add content  
   $ vim /etc/apache2/sites-enabled/000-default.conf - and add WSGIScriptAlias / /var/www/catalog/catalog.wsgi  
-  Rerefence Link [Digital Ocean]{https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps}
+  Rerefence Link [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps)
 
 * $ sudo apt-get install postgresql postgresql-contrib
 
