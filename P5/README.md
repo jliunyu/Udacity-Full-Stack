@@ -34,11 +34,20 @@
 * sudo dpkg-reconfigure tzdata  
   Reference Link: [ask ubuntu](http://askubuntu.com/questions/138423/how-do-i-change-my-timezone-to-utc-gmt)
 * $ sudo apt-get install apache2;  
-  $ sudo apt-get install python-dev;  
-  $ sudo apt-get install libapache2-mod-wsgi  
+  $ sudo apt-get install python-dev python-pip;  
+  $ sudo apt-get install libpq-dev; 
+  $ sudo apt-get install libapache2-mod-wsgi;   
+  $ sudo pip install httplib2
+  $ sudo pip install requests
+  $ sudo pip install --upgrade oauth2client
+  $ sudo pip install sqlalchemy
+  $ sudo pip install python-psycopg2
+  $ sudo pip install Flask-SQLAlchemy
+  $ sudo pip install psycopg2
+   
 * $ sudo apt-get install git  
   $ git clone https://github.com/jliunyu/Udacity-Full-Stack.git  
-* 
+* $ sudo apt-get install postgresql postgresql-contrib
 
 
 > A list of any third-party resources you made use of to complete this project.
