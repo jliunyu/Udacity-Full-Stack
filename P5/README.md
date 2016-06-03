@@ -25,8 +25,13 @@
 * $ sudo visudo - and then copy "grader  ALL=(ALL:ALL) ALL" under root entry  
   Reference Link: [Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-add-delete-and-grant-sudo-privileges-to-users-on-a-debian-vps)  
 
-* $ sudo vim /etc/ssh/sshd_config; - change port 22 to 2200 and 
+* $ sudo vim /etc/ssh/sshd_config; - change port 22 to 2200 and update PermitRootLogin to 'no'
   $ sudo service ssh restart  
+
+* $ cd /home/grader;  
+  $ sudo mkdir .ssh; cd .ssh  
+  $ sudo cp /root/.ssh/authorized_keys .
+  $ sudo chmod 755 authorized_keys  
 
 * $ sudo ufw status;  
   $ sudo ufw default deny incoming;  
