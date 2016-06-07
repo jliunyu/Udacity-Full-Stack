@@ -11,4 +11,9 @@ This repository is used to host my projects of [Udacity's Full Stack Web Develop
 * Configuring Linux Web Servers
 * Linux Command Line Basics
 
-
+## Projects
+* Movie Trailer Website
+* Tournament Results
+* Item Catalog
+* Conference Organization App
+* Linux Server Configuration
