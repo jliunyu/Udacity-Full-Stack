@@ -47,7 +47,7 @@
 * $ sudo apt-get install apache2;  
   $ sudo apt-get install python-dev python-pip;  
   $ sudo apt-get install libpq-dev; 
-  $ sudo apt-get install libapache2-mod-wsgi;   
+  $ sudo apt-get install libapache2-mod-wsgi    
   $ sudo pip install httplib2  
   $ sudo pip install requests  
   $ sudo pip install --upgrade oauth2client  
